@@ -5,7 +5,8 @@
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
         <link rel="stylesheet" type="text/css" href="css/equipo.css">
         <script type="text/javascript" src="js/zepto.js"></script>
-        <title>Menú</title>
+        <script type="text/javascript" src="js/equipo.js"></script>
+        <title>Equipo</title>
     </head>
     <body>   
         <ul>
@@ -13,14 +14,14 @@
                 <img id="imgHome" src="resource/drawable-hdpi/ic_action_home.png" alt="icono" style="width:30px;height:30px;"> 
                 </a>
             </li>
-            <li><p>Menú</p></li>
+            <li><p id="pEquipo">Equipo</p></li>
             <li><a href="#contact">
                 <img id="imgHome" src="resource/drawable-hdpi/ic_launcher_activity.png" alt="icono" style="width:30px;height:30px;">
                 </a>
             </li>
         </ul>
 
-        <div class="content">
+        <div class="contenido">
             <button id="btnMnEBclr"><img src="resource/drawable-hdpi/ic_binocular.png" /></button>
             <button id="btnMnEBtll"><img src="resource/drawable-hdpi/ic_botella.png" /></button>
             <button id="btnMnESndc"><img src="resource/drawable-hdpi/ic_sanduche.png" /></button>
@@ -30,5 +31,91 @@
             <button id="btnMnEPnza"><img src="resource/drawable-hdpi/ic_pinza.png" /></button>
             <button id="btnMnELpiz"><img src="resource/drawable-hdpi/ic_lapiz.png" /></button>           
         </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">x</span>
+                <img id="imgBino" src="resource/drawable-xxxhdpi/ic_binocular.png" alt="icono"> 
+                <p>- Para comprobar un correcto aumento en lo binoculares, debe ver a simple vista las bandas de la cola de una aguililla a 50 metros.<br>
+                    - Los aumentos recomendables son 7X, 8X, 9X y 10X.<br>
+                    - Mayores a 10, serán pocos prácticos por el aumento de peso y amplificación de las vibraciones.<br>
+                    - Tiene que considerar si puede cargar en su cuello los binoculares por más de 5 horas.<br>
+                    - Cuidelos del golpe, la suciedad, el sol y el agua.<br>
+                    - Limpiarlos con paños húmedos, o secarlos de la lluvia lo más pronto.</p>
+            </div>
+        </div>
+        <!-- The Modal 2 -->
+        <div id="myModal2" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span id ="close2" class="close">x</span>
+                <img id="imgBote" src="resource/drawable-xxxhdpi/ic_botella.png" alt="icono"> 
+                <p>- Llevar dos litros de agua aproximadamente<br>
+                - Dosificar la bebida: Tener una frecuencia de 30 minutos entre bebidas.<br>
+                - Se puede llevar agua o bebidas isotónicas<br>
+                - Respete las fuentes u otras fuentes de agua</p>
+            </div>
+        </div>
+        <!-- The Modal 3 -->
+        <div id="myModal3" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span id ="close3" class="close">x</span>
+                <img id="imgSand" src="resource/drawable-xxxhdpi/ic_sanduche.png" alt="icono"> 
+                <p>- Es mejor no encender el fuego sino llevar comida preparada<br>
+                - Después de algún bocadillo procura guardar la basura en una funda y no dejarla en ningún sendero</p>
+            </div>
+        </div>
+        <!-- The Modal 4 -->
+        <div id="myModal4" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span id ="close4" class="close">x</span>
+                <img id="imgCam" src="resource/drawable-xxxhdpi/ic_camara.png" alt="icono"> 
+                <p>- Es usada para capturar la imagen de alguna ave que no ha podido indentificar.<br>
+                - Debe procurar que la cámara no emita sonidos fuertes para no espantar a las aves.</p>
+            </div>
+        </div>
+        <!-- The Modal 5 -->
+        <div id="myModal5" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span id ="close5" class="close">x</span>
+                <img id="imgLib" src="resource/drawable-xxxhdpi/ic_libreta.png" alt="icono"> 
+                <p>- Es posible que el guía principal detalles de aves que es necesario apuntar, sobre todo si son palabras que no has escuchado antes.<br>
+                - Algunos dibujos y bocetos servirán sino se ha llevado cámara</p>
+            </div>
+        </div>
+        <!-- The Modal 6 -->
+        <div id="myModal6" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span id ="close6" class="close">x</span>
+                <img id="imgLupa" src="resource/drawable-xxxhdpi/ic_lupa.png" alt="icono"> 
+                <p>- Se utiliza para examinar de forma directa muestras de la naturaleza.<br>
+                - Cuando se ha tomado una muestra y se quieren conocer los detalles para indicarle a un experto.</p>
+            </div>
+        </div>
+        <!-- The Modal 7 -->
+        <div id="myModal7" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span id ="close7" class="close">x</span>
+                <img id="imgPinza" src="resource/drawable-xxxhdpi/ic_pinza.png" alt="icono"> 
+                <p>- Pincitas para recoger muestras</p>
+            </div>
+        </div>
+        <!-- The Modal 8 -->
+        <div id="myModal8" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span id ="close8" class="close">x</span>
+                <img id="imgLapiz" src="resource/drawable-xxxhdpi/ic_lapiz.png" alt="icono"> 
+                <p>- Lleve más de un lápiz para evitar sacar punta.<br>
+                - Si va a sacar punta no deje la basura en la ruta.</p>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/fastclick.js"></script>
     </body>   
 </html>

@@ -2,7 +2,7 @@ var app={
     
   inicio: function(){
     this.iniciaBtnMenu();
-    this.FastClick();
+    this.iniciaFastClick();
   },
 
   iniciaFastClick: function () {
