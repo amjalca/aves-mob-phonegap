@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/menu.css">
+        <link rel="stylesheet" type="text/css" href="css/habitats.css">
+        <script type="text/javascript" src="js/zepto.js"></script>
+        <script type="text/javascript" src="js/habitats.js"></script>
+        <title>Hábitats</title>
+    </head>
+    <body>   
+        <ul>
+            <li><a class="active" href="#home">
+                <img id="imgHome" src="resource/drawable-hdpi/ic_action_home.png" alt="icono" style="width:30px;height:30px;"> 
+                </a>
+            </li>
+            <li><p id="pTitulo">Hábitats</p></li>
+            <li style="float:right"><a href="#contact">
+                <img id="imgHome" src="resource/drawable-hdpi/ic_launcher_activity.png" alt="icono" style="width:30px;height:30px;">
+                </a>
+            </li>
+        </ul>
+
+        <ul class="tab">
+            <li><a href="javascript:void(0)" class="tablinks" onclick="openActividad(event, 'Aprender')" id="defaultOpen">Aprender</a></li>
+            <li ><a href="javascript:void(0)" class="tablinks" onclick="openActividad(event, 'Evaluar')">Evaluar</a></li>
+        </ul>
+
+        <div id="Aprender" class="tabcontent">
+            <div class="responsive">
+            <div class="img" id="prueba">
+                <img src="resource/drawable/costa.jpg" alt="Costas" width="120" height="80">
+                <div class="desc">Costas</div>
+            </div>
+            </div>
+
+            <div class="responsive">
+            <div class="img">
+                <img src="resource/drawable/desierto.jpg" alt="Desierto" width="120" height="80">
+                </a>
+                <div class="desc">Desierto</div>
+            </div>
+            </div>
+
+            <div class="responsive">
+            <div class="img">
+                <img src="resource/drawable/pastizal.jpg" alt="Pastizal" width="120" height="80">
+                </a>
+                <div class="desc">Pastizal</div>
+            </div>
+            </div>
+
+            <div class="responsive">
+            <div class="img">
+                <img src="resource/drawable/bosque.jpg" alt="Bosque" width="120" height="80">
+                </a>
+                <div class="desc">Bosque</div>
+            </div>
+            </div>
+
+            <div class="responsive">
+            <div class="img">
+                <img src="resource/drawable/selva.jpg" alt="Selva" width="120" height="80">
+                </a>
+                <div class="desc">Selva</div>
+            </div>
+            </div>
+
+            <div class="responsive">
+            <div class="img">
+                
+                <a target="_blank" href="resource/drawable/lago.jpg">
+                <img src="resource/drawable/lago.jpg" alt="Lago" width="120" height="80">
+                </a>
+                <div class="desc">Lagos, ríos y lagunas</div>
+            </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">                
+                <span class="close">x</span>
+                <h3>Costas</h3> 
+                <p>Se caracterizan por vivir en colonias en los lugares costeros.<br>
+                Sus nidos se encuentran en acantilados, rocas o en el suelo. Por lo general se encuentran sobrevolando el mar</p>
+                <img id="imgHCosta" src="resource/drawable/costa4.jpg" alt="icono">
+            </div>
+        </div>
+
+        <div id="Evaluar" class="tabcontent">
+            <h3>Paris</h3>
+            <p>Paris is the capital of France.</p>
+        </div>
+        
+        
+        <script>
+        function openActividad(evt, actividad) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(actividad).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+        <script type="text/javascript" src="js/fastclick.js"></script>
+    </body>   
+</html>

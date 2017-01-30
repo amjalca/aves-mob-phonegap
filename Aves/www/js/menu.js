@@ -21,12 +21,16 @@ var app={
     //botonMnRecomendaciones.addEventListener('click',this.nxtMenu,false);
     //botonMnTipos.addEventListener('click',this.nxtMenu,false);
     //botonMnMorfologia.addEventListener('click',this.nxtMenu,false);
-    //botonMnHabitats.addEventListener('click',this.nxtMenu,false);
+    botonMnHabitats.addEventListener('click',this.nxtMnHabitats,false);
     //botonMnSonidos.addEventListener('click',this.nxtMenu,false);
     },
 
     nxtMnEquipo: function(){
       location.href="equipo.html";
+    },
+
+    nxtMnHabitats: function(){
+      location.href="habitats.html";
     }
 };
 if ('addEventListener' in document) {

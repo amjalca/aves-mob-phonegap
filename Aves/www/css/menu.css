@@ -29,7 +29,7 @@ li a:hover:not(.active) {
     background-color: #2980B9;
 }
 
-p{
+#pTitulo{
     display: block;
     color: #F4F6F7;
     text-align: center;
