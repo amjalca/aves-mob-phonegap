@@ -210,3 +210,8 @@ div.desc {
     text-decoration: none;
     cursor: pointer;
 }
+
+/*Image Carousel*/
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:10px;width:10px;padding:0}
