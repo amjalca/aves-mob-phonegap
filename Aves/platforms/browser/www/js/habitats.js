@@ -11,6 +11,7 @@ var app={
   },
   
   iniciaBtnMHabtC: function(){
+     var botonHome = document.querySelector('#imgHome');
       var modal = document.getElementById('myModal');
 
     // Get the button that opens the modal
@@ -18,6 +19,7 @@ var app={
 
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
+    botonHome.addEventListener('click',this.nxtMnHome,false);
 
     // When the user clicks the button, open the modal 
     btn.onclick = function() {
@@ -36,7 +38,9 @@ var app={
         }
     }
   },
-
+ nxtMnHome: function(){
+      location.href="menu.html";
+    },
   ////////////////////////////////
   iniciaBtnMHabtD: function(){
       var modal = document.getElementById('myModal2');

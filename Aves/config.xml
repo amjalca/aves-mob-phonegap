@@ -8,5 +8,6 @@
         PhoneGap Team
     </author>
     <content src="index.html" />
-    <access origin="*" />    
+    <access origin="*" />
+    <engine name="android" spec="~6.0.0" />
 </widget>
