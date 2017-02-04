@@ -1,0 +1,95 @@
+/*Tabbed*/
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #2980B9;
+    background-color: #f1f1f1;
+    
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: #2C3E50;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+    background-color: #2C3E50;
+    color: #F4F6F7;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    background-color: #3498DB;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+
+/*Imagenes cuadricula*/
+div.img {
+    border: 1px solid #2980B9;
+}
+
+div.img:hover {
+    border: 1px solid #2C3E50;
+}
+
+div.img img {
+    width: 100%;
+    height: 100%;
+}
+
+div.desc {
+    padding: 5px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width:  49.99999%;
+        margin: 3px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.img {
+    border-radius: 5px;
+    transition: 0.3s;
+}

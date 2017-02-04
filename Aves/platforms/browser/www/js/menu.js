@@ -40,8 +40,11 @@ var app={
 
     nxtTiposAves: function(){
       location.href="tiposDeAves.html";
-    }
+    },
 
+    nxtSonidos: function(){
+      location.href="sonido.html";
+    }
 
 };
 if ('addEventListener' in document) {
