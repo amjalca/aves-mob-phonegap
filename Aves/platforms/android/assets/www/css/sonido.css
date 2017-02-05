@@ -9,7 +9,6 @@ button{
 audio{
     display: table;
     margin: 0 auto;
-    background-color: snow;
 }
 input:radio{
     height: 20px;

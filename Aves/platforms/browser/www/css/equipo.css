@@ -62,13 +62,13 @@ li a:hover:not(.active) {
 
 #btnMnEBclr, #btnMnEBtll, #btnMnESndc, #btnMnECmra, #btnMnELbrt, #btnMnELupa, #btnMnEPnza, #btnMnELpiz {
 
-    width:80px;
+    width:100px;
 
-    height:80px;
+    height:100px;
 
     float:left;
 
-    margin:30px;
+    margin:20px;
 
     border-radius: 20px;
 

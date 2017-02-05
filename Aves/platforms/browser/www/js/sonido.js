@@ -31,7 +31,9 @@ var app={
         //var botonHome = document.querySelector('#imgHome');
       // Get the modal
       var modal = document.getElementById('myModal');
+      var im = document.getElementById('imgSon').src='resource/drawable/cacique_lomiamarillo.jpg';
       var res = document.getElementById('resES').innerHTML="Correcto";
+      document.getElementById('resES').style='display: table;margin: 0 auto;';
 
       // Get the button that opens the modal
       //var btn = document.getElementById("btnMnEBclr");
@@ -66,7 +68,7 @@ var app={
       var modal = document.getElementById('myModal');
       var im = document.getElementById('imgSon').src='resource/drawable/incognito1.png';
       var res = document.getElementById('resES').innerHTML=" ¡Vuelva a intentarlo!";
-      document.getElementById('resES').style='color:#E74C3C;';
+      document.getElementById('resES').style='color:#E74C3C;display: table;margin: 0 auto;';
 
       //set checked to false
       var chOp = document.getElementsByName('ave');

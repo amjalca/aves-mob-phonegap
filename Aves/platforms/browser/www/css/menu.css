@@ -72,13 +72,13 @@ li a:hover:not(.active) {
 
 button {
 
-    width:80px;
+    width:110px;
 
-    height:80px;
+    height:110px;
 
     float:left;
 
-    margin:30px;
+    margin:20px;
 
     border-radius: 10px;
 

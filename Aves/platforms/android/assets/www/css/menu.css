@@ -43,6 +43,7 @@ li a:hover:not(.active) {
     color: #F4F6F7;
     text-align: center;
     padding: 0 60px;
+    font-size: 110%;
 }
 
 
@@ -72,13 +73,13 @@ li a:hover:not(.active) {
 
 button {
 
-    width:80px;
+    width:110px;
 
-    height:80px;
+    height:110px;
 
     float:left;
 
-    margin:30px;
+    margin:20px;
 
     border-radius: 10px;
 
