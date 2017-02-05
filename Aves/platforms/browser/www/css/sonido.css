@@ -20,9 +20,11 @@ ul.tab {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    border: 1px solid #2980B9;
-    background-color: #f1f1f1;
-    
+    background-color: rgba(255,255,255,1);
+    border-bottom-width:2px;
+    border-bottom-color:#2980B9;
+    border-bottom-style: solid;
+
 }
 
 /* Float the list items side by side */
@@ -48,6 +50,15 @@ ul.tab li a:hover {
 /* Create an active/current tablink class */
 ul.tab li a:focus, .active {
     background-color: #3498DB;
+    border-top-width:2px;
+    border-top-color:#2980B9;
+    border-top-style: solid;
+    border-left-width:2px;
+    border-left-color:#2980B9;
+    border-left-style: solid;
+    border-right-width:2px;
+    border-right-color:#2980B9;
+    border-right-style: solid;
 }
 
 /* Style the tab content */

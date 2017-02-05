@@ -43,6 +43,7 @@ li a:hover:not(.active) {
     color: #F4F6F7;
     text-align: center;
     padding: 0 60px;
+    font-size: 110%;
 }
 
 
