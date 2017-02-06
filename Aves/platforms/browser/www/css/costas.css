@@ -30,6 +30,6 @@ button{
     height:60px;
     display: table;
     float: center;
-    /*margin: 0 auto;*/
+    margin: 0 auto;
     font-size: 1em;
 }

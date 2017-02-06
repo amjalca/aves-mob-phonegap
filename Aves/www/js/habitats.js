@@ -34,23 +34,23 @@ var app={
   },
 
   evlrDesierto: function(){
-    alert("Desierto");
+    location.href="desiertoE.html";
   },
 
   evlrPastizal: function(){
-    alert("Pastizal");
+    location.href="pastizalE.html";
   },
 
   evlrBosques: function(){
-    alert("Bosques");
+    location.href="bosqueE.html";
   },
 
   evlrSelvas: function(){
-    alert("Selvas");
+    location.href="selvaE.html";
   },
 
   evlrLRL: function(){
-    alert("Lagos");
+    location.href="lagosE.html";
   },
 
   /*Sección Aprender */

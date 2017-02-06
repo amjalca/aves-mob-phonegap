@@ -34,11 +34,11 @@ var app={
   },
 
   evlrDesierto: function(){
-    alert("Desierto");
+    location.href="desiertoE.html";
   },
 
   evlrPastizal: function(){
-    alert("Pastizal");
+    location.href="pastizalE.html";
   },
 
   evlrBosques: function(){
