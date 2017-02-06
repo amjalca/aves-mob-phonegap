@@ -1,6 +1,7 @@
 var app={
     
   inicio: function(){
+    this.iniciaBtnsEvaluar();
     this.iniciaBtnMHabtC();
     this.iniciaBtnMHabtD();
     this.iniciaBtnMHabtP();
@@ -9,13 +10,56 @@ var app={
     this.iniciaBtnMHabtL();
     this.iniciaFastClick();
   },
-  
+
+  /*Sección Evaluar */
+  iniciaBtnsEvaluar: function(){
+    var botonECostas = document.querySelector('#EvaCostas');
+    var botonEDesierto = document.querySelector('#EvaDesierto');
+    var botonEPastizal = document.querySelector('#EvaPastizal');
+    var botonEBosques = document.querySelector('#EvaBosques');
+    var botonESelvas = document.querySelector('#EvaSelvas');
+    var botonELRL = document.querySelector('#EvaLRL');
+
+    botonECostas.addEventListener('click',this.evlrCostas,false);
+    botonEDesierto.addEventListener('click',this.evlrDesierto,false);
+    botonEPastizal.addEventListener('click',this.evlrPastizal,false);
+    botonEBosques.addEventListener('click',this.evlrBosques,false);
+    botonESelvas.addEventListener('click',this.evlrSelvas,false);
+    botonELRL.addEventListener('click',this.evlrLRL,false);
+    
+  },
+
+  evlrCostas: function(){
+    location.href="costasE.html";
+  },
+
+  evlrDesierto: function(){
+    alert("Desierto");
+  },
+
+  evlrPastizal: function(){
+    alert("Pastizal");
+  },
+
+  evlrBosques: function(){
+    alert("Bosques");
+  },
+
+  evlrSelvas: function(){
+    alert("Selvas");
+  },
+
+  evlrLRL: function(){
+    alert("Lagos");
+  },
+
+  /*Sección Aprender */
   iniciaBtnMHabtC: function(){
      var botonHome = document.querySelector('#imgHome');
       var modal = document.getElementById('myModal');
 
     // Get the button that opens the modal
-    var btn = document.getElementById("prueba");
+    var btn = document.getElementById("AprCostas");
 
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
@@ -46,7 +90,7 @@ var app={
       var modal = document.getElementById('myModal2');
 
     // Get the button that opens the modal
-    var btn = document.getElementById("prueba2");
+    var btn = document.getElementById("AprDesierto");
 
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close2")[0];
@@ -74,7 +118,7 @@ var app={
       var modal = document.getElementById('myModal3');
 
     // Get the button that opens the modal
-    var btn = document.getElementById("prueba3");
+    var btn = document.getElementById("AprPastizal");
 
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close3")[0];
@@ -101,7 +145,7 @@ var app={
       var modal = document.getElementById('myModal4');
 
     // Get the button that opens the modal
-    var btn = document.getElementById("prueba4");
+    var btn = document.getElementById("AprBosques");
 
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close4")[0];
@@ -129,7 +173,7 @@ var app={
       var modal = document.getElementById('myModal5');
 
     // Get the button that opens the modal
-    var btn = document.getElementById("prueba5");
+    var btn = document.getElementById("AprSelvas");
 
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close5")[0];
@@ -157,7 +201,7 @@ var app={
       var modal = document.getElementById('myModal6');
 
     // Get the button that opens the modal
-    var btn = document.getElementById("prueba6");
+    var btn = document.getElementById("AprLRL");
 
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close6")[0];

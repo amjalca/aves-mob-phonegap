@@ -66,7 +66,7 @@ var app={
 		else{
 			// Get the modal
       var modal = document.getElementById('myModal');
-      var im = document.getElementById('imgSon').src='resource/drawable/incognito1.png';
+      var im = document.getElementById('imgSon').src='resource/drawable/incognito1_pregunta.png';
       var res = document.getElementById('resES').innerHTML=" ¡Vuelva a intentarlo!";
       document.getElementById('resES').style='color:#E74C3C;display: table;margin: 0 auto;';
 
