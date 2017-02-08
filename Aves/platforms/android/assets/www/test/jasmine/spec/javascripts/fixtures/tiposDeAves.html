@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="js/tiposAves.js"></script>
+	<script type="text/javascript" src="js/quizzTestAves.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/tiposAves.css">
+        <title>Tipos de aves</title>
+    </head>
+    <body>   
+        <ul>
+            <li><a class="active" href="#home">
+		<img id="imgHome" src="resource/drawable-hdpi/chevron-que-apunta-a-la-izquierda.png" alt="icono" style="width:30px;height:30px;"> 
+		</a>
+            </li>
+            <li><h5 id="pTitulo">Tipos de aves</h5></li>
+            <li style="float:right"><a href="#contact">
+                <img id="imgHome" src="resource/drawable-hdpi/ic_launcher_activity.png" alt="icono" style="width:30px;height:30px;">
+                </a>
+            </li>
+        </ul>
+
+	<ul class="nav nav-tabs nav-justified">
+	    <li id="aprenderTab"><a href="#" onclick="openActividad(event, 'Aprender')">APRENDER</a></li>
+	    <li><a href="#" onclick="openActividad(event, 'Evaluar')">EVALUAR</a></li>
+	   
+	  </ul>
+
+
+       <div id="Aprender" class="tabcontent">
+            <div class="responsive">
+            <div class="img" id="aprenderMarinas">
+                <img src="resource/drawable/pelicano-silueta-en-vuelo.png" alt="aprenderMarinas" width="120" height="80">
+                <div class="desc">Marinas</div>
+            </div>
+            </div>
+
+            <div class="responsive">
+            <div class="img" id="aprenderVadeadoras">
+                <img src="resource/drawable/garza-pajaro-forma-volando.png" alt="aprenderVadeadoras" width="120" height="80">
+                <div class="desc">Vadeadoras</div>
+            </div>
+            </div>
+
+            <div class="responsive">
+            <div class="img" id="aprenderGaviotas">
+                <img src="resource/drawable/golondrina-pajaro-que-vuela-la-silueta.png" alt="aprenderGaviotas" width="120" height="80">
+                <div class="desc">Gaviotas marinas</div>
+            </div>
+            </div>
+
+            <div class="responsive">
+            <div class="img" id="aprenderGansos">
+                <img src="resource/drawable/ganso.png" alt="aprenderGansos" width="120" height="80">
+                <div class="desc">Gansos y patos</div>
+            </div>
+            </div>
+
+            <div class="responsive">
+            <div class="img" id="aprenderHalcon">
+                <img src="resource/drawable/halcon-forma-animal-de-ave.png" alt="aprenderHalcon" width="120" height="80">
+                <div class="desc">Halcones y águilas </div>
+            </div>
+            </div>
+
+	<div class="responsive">
+            <div class="img" id="aprenderBuho">
+                <img src="resource/drawable/buho-forma-del-pajaro.png" alt="aprenderBuho" width="120" height="80">
+                <div class="desc">Búhos y tecolotes</div>
+            </div>
+            </div>
+
+	<div class="responsive">
+            <div class="img" id="aprenderPaloma">
+                <img src="resource/drawable/paloma.png" alt="aprenderPaloma" width="120" height="80">
+                <div class="desc">Palomas y huilotas</div>
+            </div>
+            </div>
+
+	<div class="responsive">
+            <div class="img" id="aprenderGolondrina">
+                <img src="resource/drawable/golondrina.png" alt="aprenderGolondrina" width="120" height="80">
+                <div class="desc">Golondrina y vencejos </div>
+            </div>
+            </div>
+
+            
+            <div class="clearfix"></div>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">                
+                <span class="close">x</span>
+                <h3>Costas</h3> 
+                <p>Se caracterizan por vivir en colonias en los lugares costeros.<br>
+                Sus nidos se encuentran en acantilados, rocas o en el suelo. Por lo general se encuentran sobrevolando el mar</p>
+                <!--<img id="imgHCosta" src="resource/drawable/costa4.jpg" alt="icono">-->
+                <div class="w3-content w3-display-container" style="max-width:400px">
+                <img class="mySlides" src="resource/drawable/costa1.jpg" style="width:100%">
+                <img class="mySlides" src="resource/drawable/costa2.jpg" style="width:100%">
+                <img class="mySlides" src="resource/drawable/costa3.jpg" style="width:100%">
+                <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+        </div>
+    </div>
+            </div>
+        </div>
+
+        
+
+        <div id="Evaluar" class="tabcontent">
+            <div class="responsive">
+            <div class="img" id="evaluarMarinas">
+                <img src="resource/drawable/pelicano-silueta-en-vuelo.png" alt="evaluarMarinas" width="120" height="80">
+                <div class="desc">Marddinas</div>
+            </div>
+            </div>
+
+            <div class="responsive">
+            <div class="img" id="evaluarVadeadoras">
+                <img src="resource/drawable/garza-pajaro-forma-volando.png" alt="evaluarVadeadoras" width="120" height="80">
+                <div class="desc">Vadeadoras</div>
+            </div>
+            </div>
+
+            <div class="responsive">
+            <div class="img" id="evaluarGaviotas">
+                <img src="resource/drawable/golondrina-pajaro-que-vuela-la-silueta.png" alt="evaluarGaviotas" width="120" height="80">
+                <div class="desc">Gaviotas marinas</div>
+            </div>
+            </div>
+
+            <div class="responsive">
+            <div class="img" id="evaluarGansos">
+                <img src="resource/drawable/ganso.png" alt="evaluarGansos" width="120" height="80">
+                <div class="desc">Gansos y patos</div>
+            </div>
+            </div>
+
+            <div class="responsive">
+            <div class="img" id="evaluarHalcon">
+                <img src="resource/drawable/halcon-forma-animal-de-ave.png" alt="evaluarHalcon" width="120" height="80">
+                <div class="desc">Halcones y águilas </div>
+            </div>
+            </div>
+
+	<div class="responsive">
+            <div class="img" id="evaluarBuho">
+                <img src="resource/drawable/buho-forma-del-pajaro.png" alt="evaluarBuho" width="120" height="80">
+                <div class="desc">Búhos y tecolotes</div>
+            </div>
+            </div>
+
+	<div class="responsive">
+            <div class="img" id="evaluarPaloma">
+                <img src="resource/drawable/paloma.png" alt="evaluarPaloma" width="120" height="80">
+                <div class="desc">Palomas y huilotas</div>
+            </div>
+            </div>
+
+	<div class="responsive">
+            <div class="img" id="evaluarGolondrina">
+                <img src="resource/drawable/golondrina.png" alt="golondrina" width="120" height="80">
+                <div class="desc">Golondrina y vencejos </div>
+            </div>
+            </div>
+
+            
+            <div class="clearfix"></div>
+        </div>
+        
+        
+        <script>
+        /*Image Carousel*/
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+        showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+        showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" w3-white", "");
+        }
+        x[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " w3-white";
+        }
+        
+        /*Tab*/
+        function openActividad(evt, actividad) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(actividad).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+        <script type="text/javascript" src="js/fastclick.js"></script>
+    </body>   
+</html>

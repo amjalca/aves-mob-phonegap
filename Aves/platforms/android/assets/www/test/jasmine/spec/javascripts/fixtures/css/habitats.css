@@ -1,0 +1,219 @@
+/*Tabbed*/
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(255,255,255,1);
+    border-bottom-width:2px;
+    border-bottom-color:#2980B9;
+    border-bottom-style: solid;
+    
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: #2C3E50;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+    background-color: #2C3E50;
+    color: #F4F6F7;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    background-color: #3498DB;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+
+/*Imagenes cuadricula*/
+div.img {
+    border: 1px solid #2980B9;
+}
+
+div.img:hover {
+    border: 1px solid #2C3E50;
+}
+
+div.img img {
+    width: 100%;
+    height: 100%;
+}
+
+div.desc {
+    padding: 5px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width:  49.99999%;
+        margin: 3px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Modal*/
+#imgHCosta, #imgHDesierto, #imgHPastizal, #imgHBosque, #imgHSelva{
+    display: table;
+    margin: 0 auto;
+    width:90px;
+    height:90px;
+}
+.img {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.img:hover {opacity: 0.7;}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #3498DB;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close2 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+    color: #3498DB;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close3 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close3:hover,
+.close3:focus {
+    color: #3498DB;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close4 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close4:hover,
+.close4:focus {
+    color: #3498DB;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close5 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close5:hover,
+.close5:focus {
+    color: #3498DB;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close6 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close6:hover,
+.close6:focus {
+    color: #3498DB;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Image Carousel*/
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:10px;width:10px;padding:0}
