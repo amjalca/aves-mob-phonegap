@@ -20,7 +20,7 @@ var app={
     
     botonHome.addEventListener('click',this.nxtMnHome,false);
     botonMnEquipo.addEventListener('click',this.nxtMnEquipo,false);
-    //botonMnRecomendaciones.addEventListener('click',this.nxtMenu,false);
+    botonMnRecomendaciones.addEventListener('click',this.nxtRecomendacion,false);
     botonMnTipos.addEventListener('click',this.nxtTiposAves,false);
     //botonMnMorfologia.addEventListener('click',this.nxtMenu,false);
     botonMnHabitats.addEventListener('click',this.nxtMnHabitats,false);
@@ -32,6 +32,10 @@ var app={
     },
     nxtMnEquipo: function(){
       location.href="equipo.html";
+    },
+
+    nxtRecomendacion: function(){
+      location.href="recomendacion.html";
     },
 
     nxtMnHabitats: function(){
