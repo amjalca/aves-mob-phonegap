@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/menu.css">
+        <link rel="stylesheet" type="text/css" href="css/habitats.css">
+        <link rel="stylesheet" type="text/css" href="css/sonido.css">
+        <script type="text/javascript" src="js/zepto.js"></script>
+        <script type="text/javascript" src="js/morfologia.js"></script>
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+        <title>Hábitats</title>
+    </head>
+    <body>   
+        <ul>
+            <li><a class="active" href="#home">
+                <img id="imgHome" src="resource/drawable-hdpi/chevron-que-apunta-a-la-izquierda.png" alt="icono" style="width:30px;height:30px;"> 
+                </a>
+            </li>
+            <li><p id="pTitulo">Morfologia</p></li>
+            <li style="float:right"><a href="#contact">
+                <img id="imgHome" src="resource/drawable-hdpi/ic_launcher_activity.png" alt="icono" style="width:30px;height:30px;">
+                </a>
+            </li>
+        </ul>
+
+        <ul class="tab">
+            <li><a href="javascript:void(0)" class="tablinks" onclick="openActividad(event, 'Aprender')" id="defaultOpen">Aprender</a></li>
+            <li ><a href="javascript:void(0)" class="tablinks" onclick="openActividad(event, 'Evaluar')">Evaluar</a></li>
+        </ul>
+
+        <div id="Aprender" class="tabcontent">
+            <div class="responsive">
+            <div class="img" id="lomiamarillo">
+                <img src="resource/drawable/morfologia1.jpg" alt="Lomiamarillo" width="120" height="80">
+                <div class="desc">Morfología principal</div>
+            </div>
+            <p>Para poder identificar a un ave es importante saber los nombres de las diferentes partes de su cuerpo.</p>
+            </div>
+        </div>
+        <div id="Evaluar" class="tabcontent">
+            <br>
+            <h2 style='display: table;margin: 0 auto;'>¿La respuesta es?</h2>
+            <br>
+            <div class="responsive">
+            <div class="img" id="incognito">
+                <img id="imgSonIg" src="resource/drawable/morfologia2.jpg" alt="cuestion" width="130" height="130">
+            </div>
+            </div>
+            <br>
+            <input type="radio" name="ave" value="Opcion1">2. Ceja 5. Cola<br>
+            <br>
+            <input type="radio" name="ave" value="Opcion2">1. Patas 5. Ojo<br>
+            <br>
+            <input type="radio" name="ave" value="Opcion3">3. Pico 5. Patas<br>
+            <br>
+            <button id="btnSon">Aceptar</button>
+        </div>
+
+        <!--<button type="button" id="botonEvaluarH">Evaluar</button>-->
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">x</span>
+            <!--<img id="imgSon" src="resource/drawable/cacique_lomiamarillo.jpg" alt="icono"> 
+            --><br>
+            <p id="resES"></p>
+        </div>
+        </div>
+        
+        <script>
+        /*Tab*/
+        function openActividad(evt, actividad) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(actividad).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+        <script type="text/javascript" src="js/fastclick.js"></script>
+    </body>   
+</html>

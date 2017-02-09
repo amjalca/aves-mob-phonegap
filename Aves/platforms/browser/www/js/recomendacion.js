@@ -22,7 +22,7 @@ var app={
   },
 
   nxtMnHome: function(){
-    location.href="recomendacion.html";
+    location.href="menu.html";
   },
 
   
