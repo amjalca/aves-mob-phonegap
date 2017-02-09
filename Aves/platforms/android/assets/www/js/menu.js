@@ -39,7 +39,7 @@ var app={
     },
 
     nxtTiposAves: function(){
-      location.href="tiposDeAves.html";
+      location.href="tipos.html";
     },
 
     nxtSonidos: function(){

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/menu.css">
+        <link rel="stylesheet" type="text/css" href="css/tiposAves.css">
+        <script type="text/javascript" src="js/zepto.js"></script>
+        <script type="text/javascript" src="js/tipos.js"></script>
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+        <title>Tipos</title>
+    </head>
+    <body>   
+        <ul>
+            <li><a class="active" href="#home">
+                <img id="imgHome" src="resource/drawable-hdpi/chevron-que-apunta-a-la-izquierda.png" alt="icono" style="width:30px;height:30px;"> 
+                </a>
+            </li>
+            <li><p id="pTitulo">Tipos</p></li>
+            <li style="float:right"><a href="#contact">
+                <img id="imgHome" src="resource/drawable-hdpi/ic_launcher_activity.png" alt="icono" style="width:30px;height:30px;">
+                </a>
+            </li>
+        </ul>
+
+        <ul class="tab">
+            <li><a href="javascript:void(0)" class="tablinks" onclick="openActividad(event, 'Aprender')" id="defaultOpen">Aprender</a></li>
+            <li ><a href="javascript:void(0)" class="tablinks" onclick="openActividad(event, 'Evaluar')">Evaluar</a></li>
+        </ul>
+
+        
+       <div id="Aprender" class="tabcontent">
+            <div class="responsive">
+            <div class="img" id="AprMarinas">
+                <img src="resource/drawable/pelicano-silueta-en-vuelo.png" alt="aprenderMarinas" width="120" height="80">
+                <div class="desc">Marinos</div>
+            </div>
+            </div>
+
+            <div class="responsive">
+            <div class="img" id="AprVadeadoras">
+                <img src="resource/drawable/garza-pajaro-forma-volando.png" alt="aprenderVadeadoras" width="120" height="80">
+                <div class="desc">Vadeadoras</div>
+            </div>
+            </div>
+
+            <div class="responsive">
+            <div class="img" id="AprGaviotas">
+                <img src="resource/drawable/golondrina-pajaro-que-vuela-la-silueta.png" alt="aprenderGaviotas" width="120" height="80">
+                <div class="desc">Gaviotas marinas</div>
+            </div>
+            </div>
+
+            <div class="responsive">
+            <div class="img" id="AprGansos">
+                <img src="resource/drawable/ganso.png" alt="aprenderGansos" width="120" height="80">
+                <div class="desc">Gansos y patos</div>
+            </div>
+            </div>
+
+            <div class="responsive">
+            <div class="img" id="AprHalcon">
+                <img src="resource/drawable/halcon-forma-animal-de-ave.png" alt="aprenderHalcon" width="120" height="80">
+                <div class="desc">Halcones y águilas </div>
+            </div>
+            </div>
+
+	<div class="responsive">
+            <div class="img" id="AprBuho">
+                <img src="resource/drawable/buho-forma-del-pajaro.png" alt="aprenderBuho" width="120" height="80">
+                <div class="desc">Búhos y tecolotes</div>
+            </div>
+            </div>
+
+	<div class="responsive">
+            <div class="img" id="AprPaloma">
+                <img src="resource/drawable/paloma.png" alt="aprenderPaloma" width="120" height="80">
+                <div class="desc">Palomas y huilotas</div>
+            </div>
+            </div>
+
+	<div class="responsive">
+            <div class="img" id="AprGolondrina">
+                <img src="resource/drawable/golondrina.png" alt="aprenderGolondrina" width="120" height="80">
+                <div class="desc">Golondrina y vencejos </div>
+            </div>
+            </div>
+
+            
+            <div class="clearfix"></div>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">                
+                <span class="close">x</span>
+                <h3>Marinas</h3> 
+                <p>Estas aves pasan en el agua o en costa. Las patas se encuentran muy atrás de su cuerpo. Tenemos a los pelicanos, fragatas, cormoranes y bobos</p>
+                <!--<img id="imgHCosta" src="resource/drawable/costa4.jpg" alt="icono">-->
+                <div class="w3-content w3-display-container" style="max-width:400px">
+                <img class="mySlides" src="resource/drawable/marinas1.jpg" style="width:100%">
+                <img class="mySlides" src="resource/drawable/marinas2.jpg" style="width:100%">
+                <img class="mySlides" src="resource/drawable/marinas3.jpg" style="width:100%">
+                <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+            </div>
+        </div>
+
+        <!-- The Modal 2-->
+        <div id="myModal2" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">                
+                <span class="close2">x</span>
+                <h3>Vadeadoras</h3> 
+                <p>Están en las extensiones de agua de la superficie terrestre y tienen las patas largas como garzas o cortas como los playeritos.</p>
+                <img id="imgHDesierto" src="resource/drawable/vadeadoras1.jpg" alt="icono">
+                
+                </div>
+        </div>
+
+        <!-- The Modal 3-->
+        <div id="myModal3" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">                
+                <span class="close3">x</span>
+                <h3>Gaviotas marinas</h3> 
+                <p>Están cerca de las costas o en tierra adentro. Son de tamaño mediano, de alas largas y puntiagudas.</p>
+                <img id="imgHPastizal" src="resource/drawable/gaviotas1.jpg" alt="icono">
+            </div>
+        </div>
+
+        <!-- The Modal 4-->
+        <div id="myModal4" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">                
+                <span class="close4">x</span>
+                <h3>Ganzos y patos</h3> 
+                <p>En las extensiones de agua o cuerpos de agua se encuentran. Están nadando y para moverse en el agua usan las patas palmeadas como remos.</p>
+                <img id="imgHBosque" src="resource/drawable/gansos1.jpg" alt="icono">
+            </div>
+        </div>
+
+        <!-- The Modal 5-->
+        <div id="myModal5" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">                
+                <span class="close5">x</span>
+                <h3>Halcones y águilas</h3> 
+                <p>Pueden estar posadas en árboles o planeando, conocidas como aves de presa. Tienen unas garras afiladas y su pico es como un gancho.</p>
+                <img id="imgHSelva" src="resource/drawable/halcon1.jpg" alt="icono">
+            </div>
+        </div>
+
+        <!-- The Modal 6-->
+        <div id="myModal6" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">                
+                <span class="close6">x</span>
+                <h3>Búhos y tecolotes</h3> 
+                <p>El plumaje es suave para el vuelo silencioso, mas su cara es rendonda. El día pasan perchados en los árboles, y por lo general son nocturnos.</p>
+                <img id="imgHSelva" src="resource/drawable/buho1.jpg" alt="icono">
+            </div>
+        </div>
+
+        <!-- The Modal 7-->
+        <div id="myModal7" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">                
+                <span class="close7">x</span>
+                <h3>Palomas y huilotas</h3> 
+                <p>Son de tamaño mediano con pico pequeño, se las encuentra en los sitios urbanos. Se alimentan con lo que encuentran en el suelo</p>
+                <img id="imgHPaloma" src="resource/drawable/paloma1.jpg" alt="icono">
+            </div>
+        </div>
+
+        <!-- The Modal 8-->
+        <div id="myModal8" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">                
+                <span class="close8">x</span>
+                <h3>Golondrinas y vencejos</h3> 
+                <p>Vuelen casi siempre y lo hacen en grupo. Atrapan insectos, se las encuentra cerca del agua. Sus alas son puntiagudas.</p>
+                <img id="imgHGolondn" src="resource/drawable/golondrina1.jpg" alt="icono">
+            </div>
+        </div>
+
+        <div id="Evaluar" class="tabcontent">
+                        <div class="responsive">
+            <div class="img" id="EvaMarinas">
+                <img src="resource/drawable/pelicano-silueta-en-vuelo.png" alt="aprenderMarinas" width="120" height="80">
+                <div class="desc">Marinas</div>
+            </div>
+            </div>
+
+            <div class="responsive">
+            <div class="img" id="EvaVadeadoras">
+                <img src="resource/drawable/garza-pajaro-forma-volando.png" alt="aprenderVadeadoras" width="120" height="80">
+                <div class="desc">Vadeadoras</div>
+            </div>
+            </div>
+
+            <div class="responsive">
+            <div class="img" id="EvaGaviotas">
+                <img src="resource/drawable/golondrina-pajaro-que-vuela-la-silueta.png" alt="aprenderGaviotas" width="120" height="80">
+                <div class="desc">Gaviotas marinas</div>
+            </div>
+            </div>
+
+            <div class="responsive">
+            <div class="img" id="EvaGansos">
+                <img src="resource/drawable/ganso.png" alt="aprenderGansos" width="120" height="80">
+                <div class="desc">Gansos y patos</div>
+            </div>
+            </div>
+
+            <div class="responsive">
+            <div class="img" id="EvaHalcon">
+                <img src="resource/drawable/halcon-forma-animal-de-ave.png" alt="aprenderHalcon" width="120" height="80">
+                <div class="desc">Halcones y águilas </div>
+            </div>
+            </div>
+
+	<div class="responsive">
+            <div class="img" id="EvaBuho">
+                <img src="resource/drawable/buho-forma-del-pajaro.png" alt="aprenderBuho" width="120" height="80">
+                <div class="desc">Búhos y tecolotes</div>
+            </div>
+            </div>
+
+	<div class="responsive">
+            <div class="img" id="EvaPaloma">
+                <img src="resource/drawable/paloma.png" alt="aprenderPaloma" width="120" height="80">
+                <div class="desc">Palomas y huilotas</div>
+            </div>
+            </div>
+
+	<div class="responsive">
+            <div class="img" id="EvaGolondrina">
+                <img src="resource/drawable/golondrina.png" alt="aprenderGolondrina" width="120" height="80">
+                <div class="desc">Golondrina y vencejos </div>
+            </div>
+            </div>
+
+            
+            <div class="clearfix"></div>
+        </div>
+        
+        
+        <script>
+        /*Image Carousel*/
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+        showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+        showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" w3-white", "");
+        }
+        x[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " w3-white";
+        }
+        
+        /*Tab*/
+        function openActividad(evt, actividad) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(actividad).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+        <script type="text/javascript" src="js/fastclick.js"></script>
+    </body>   
+</html>
