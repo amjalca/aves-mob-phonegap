@@ -20,9 +20,9 @@ var app={
     
     botonHome.addEventListener('click',this.nxtMnHome,false);
     botonMnEquipo.addEventListener('click',this.nxtMnEquipo,false);
-    //botonMnRecomendaciones.addEventListener('click',this.nxtMenu,false);
+    botonMnRecomendaciones.addEventListener('click',this.nxtRecomendacion,false);
     botonMnTipos.addEventListener('click',this.nxtTiposAves,false);
-    //botonMnMorfologia.addEventListener('click',this.nxtMenu,false);
+    botonMnMorfologia.addEventListener('click',this.nxtMorfologia,false);
     botonMnHabitats.addEventListener('click',this.nxtMnHabitats,false);
     botonMnSonidos.addEventListener('click',this.nxtSonidos,false);
     },
@@ -34,12 +34,20 @@ var app={
       location.href="equipo.html";
     },
 
+    nxtRecomendacion: function(){
+      location.href="recomendacion.html";
+    },
+
+    nxtTiposAves: function(){
+      location.href="tipos.html";
+    },
+
     nxtMnHabitats: function(){
       location.href="habitats.html";
     },
 
-    nxtTiposAves: function(){
-      location.href="tiposDeAves.html";
+    nxtMorfologia: function(){
+      location.href="morfologia.html";
     },
 
     nxtSonidos: function(){

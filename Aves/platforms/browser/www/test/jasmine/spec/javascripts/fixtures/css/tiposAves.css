@@ -142,7 +142,7 @@ div.desc {
 }
 
 /*Modal*/
-#imgHCosta, #imgHDesierto, #imgHPastizal, #imgHBosque, #imgHSelva{
+#imgHCosta, #imgHDesierto, #imgHPastizal, #imgHBosque, #imgHSelva, #imgHPaloma, #imgHGolondn{
     display: table;
     margin: 0 auto;
     width:90px;
@@ -263,6 +263,33 @@ div.desc {
     cursor: pointer;
 }
 
+.close7 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close7:hover,
+.close7:focus {
+    color: #3498DB;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close8 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close8:hover,
+.close8:focus {
+    color: #3498DB;
+    text-decoration: none;
+    cursor: pointer;
+}
 /*Image Carousel*/
 .mySlides {display:none}
 .w3-left, .w3-right, .w3-badge {cursor:pointer}

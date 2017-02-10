@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/menu.css">
+        <link rel="stylesheet" type="text/css" href="css/habitats.css">
+        <link rel="stylesheet" type="text/css" href="css/marinas.css">
+        <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+        <script type="text/javascript" src="js/zepto.js"></script>
+        <script type="text/javascript" src="js/vadeadoras.js"></script>
+        
+        <title>Vadeadoras</title>
+    </head>
+    <body>   
+        <ul>
+            <li><a class="active" href="#home">
+                <img id="imgHome" src="resource/drawable-hdpi/chevron-que-apunta-a-la-izquierda.png" alt="icono" style="width:30px;height:30px;"> 
+                </a>
+            </li>
+            <li><p id="pTitulo">Vadeadoras</p></li>
+            <li style="float:right"><a href="#contact">
+                <img id="imgHome" src="resource/drawable-hdpi/ic_launcher_activity.png" alt="icono" style="width:30px;height:30px;">
+                </a>
+            </li>
+        </ul>
+        
+        <div class="contenido">
+            <br>
+            <h4 style='display: table;margin: 0 auto;'>¿Cuáles no son las aves vadeadoras?</h4>
+            <div class="responsive">
+                <div>
+                    <img class="img" id="vadeadoras1" src="resource/drawable/vadeadoras1.jpg" alt="evaluarDesierto" width="110" height="100">
+                    
+                </div>
+            </div>
+
+            <div class="responsive">
+            <div >
+                <img class="img" id="vadeadoras2" src="resource/drawable/vadeadoras2.jpg" alt="evaluarDesierto" width="110" height="100">
+               
+            </div>
+            </div>
+
+            <div class="responsive">
+            <div >
+                <img class="img" id="opt3" src="resource/drawable/golondrina3.jpg" alt="evaluarDesierto" width="110" height="100">
+                
+            </div>
+            </div>
+
+            <div class="responsive">
+                <div >
+                    <img class="img" id="opt4" src="resource/drawable/golondrina2.jpg" alt="evaluarDesierto" width="110" height="100">  
+                </div>
+            </div>
+            <div class="responsive">
+                <div >
+                    <img class="img" id="opt1" src="resource/drawable/golondrina1.jpg" alt="evaluarDesierto" width="110" height="100">  
+                </div>
+            </div>
+            <div class="responsive">
+                <div >
+                    <img class="img" id="opt2" src="resource/drawable/marinas2.jpg" alt="evaluarDesierto" width="110" height="100">  
+                </div>
+            </div>
+        </div>
+
+        <button type="button" id="botonEvaluarH">Evaluar</button>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">x</span>
+            <!--<img id="imgSon" src="resource/drawable/cacique_lomiamarillo.jpg" alt="icono"> 
+            --><br>
+            <p id="resES"></p>
+        </div>
+        </div>
+
+        <script type="text/javascript" src="js/fastclick.js"></script>
+    </body>   
+</html>

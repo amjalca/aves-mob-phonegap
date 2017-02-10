@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/menu.css">
+        <link rel="stylesheet" type="text/css" href="css/habitats.css">
+        <link rel="stylesheet" type="text/css" href="css/recomendacion.css">
+        <script type="text/javascript" src="js/zepto.js"></script>
+        <script type="text/javascript" src="js/recomendacion.js"></script>
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+        <title>Hábitats</title>
+    </head>
+    <body>   
+        <ul>
+            <li><a class="active" href="#home">
+                <img id="imgHome" src="resource/drawable-hdpi/chevron-que-apunta-a-la-izquierda.png" alt="icono" style="width:30px;height:30px;"> 
+                </a>
+            </li>
+            <li><p id="pTitulo">Recomendaciones</p></li>
+            <li style="float:right"><a href="#contact">
+                <img id="imgHome" src="resource/drawable-hdpi/ic_launcher_activity.png" alt="icono" style="width:30px;height:30px;">
+                </a>
+            </li>
+        </ul>
+
+        <ul class="tab">
+            <li><a href="javascript:void(0)" class="tablinks" onclick="openActividad(event, 'Aprender')" id="defaultOpen">Aprender</a></li>
+            <li ><a href="javascript:void(0)" class="tablinks" onclick="openActividad(event, 'Evaluar')">Evaluar</a></li>
+        </ul>
+
+        <div id="Aprender" class="tabcontent">
+           <br>
+           <img id="imgGrupo" src="resource/drawable/grupo.png" alt="icono"> 
+            <p>- Cumplir con los reglamentos de los parque y áreas naturales.<br><br>
+                - No dejar basura, el ave puede creer que es alimento e ingerirla.<br><br>
+                - Procurar caminar por los caminos o veredas.<br><br>
+                - Dividirse en pequeños grupos para mantener el control y despliegue.<br><br>
+                - No molestar a las aves si están anidando.<br><br>
+                - Hablar en voz baja y llevar a la mano los binoculares.<br><br>
+                - No mire las aves en contraluz, las características se pueden confundir.</p>
+            <div class="clearfix"></div>
+        </div>
+        <div id="Evaluar" class="tabcontent">
+            <div class="contenido">
+            <br>
+            <h4 style='display: table;margin: 0 auto;'>¿Qué se puede hacer durante el avistamiento?</h4>
+            <div class="responsive">
+                <div>
+                    <img class="img" id="opt1" src="resource/drawable/grita.jpg" alt="evaluarCostas" width="110" height="100">
+                    
+                </div>
+            </div>
+
+            <div class="responsive">
+            <div >
+                <img class="img" id="opt2" src="resource/drawable/nolleva.jpg" alt="evaluarCostas" width="110" height="100">
+               
+            </div>
+            </div>
+
+            <div class="responsive">
+            <div >
+                <img class="img" id="opt3" src="resource/drawable/sol.jpg" alt="evaluarCostas" width="110" height="100">
+                
+            </div>
+            </div>
+
+            <div class="responsive">
+                <div >
+                    <img class="img" id="opt4" src="resource/drawable/llevar.jpg" alt="evaluarCostas" width="110" height="100">  
+                </div>
+            </div>
+        </div>
+
+        <button type="button" id="botonEvaluarH">Evaluar</button>
+        </div>
+        <!-- The Modal -->
+        <div id="myModalCorrecto" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">x</span>
+            <!--<img id="imgSon" src="resource/drawable/cacique_lomiamarillo.jpg" alt="icono"> 
+            --><br>
+            <p id="resES"></p>
+        </div>
+        </div>
+        <div id="myModalIncorrecto" class="modal" style="display:none;"></div>
+        <script>
+        /*Tab*/
+        function openActividad(evt, actividad) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(actividad).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+        <script type="text/javascript" src="js/fastclick.js"></script>
+    </body>   
+</html>
